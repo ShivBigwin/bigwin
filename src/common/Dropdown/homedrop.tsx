@@ -1,6 +1,6 @@
 export default function HomeDrop(){
     return(
-        <div className="flex flex-col px-4 py-2 space-y-2 bg-white">
+        <div className="flex flex-col px-4 py-20 h-60 space-y-1 text-black bg-white">
           <a href="home" className="hover:text-gray-300">Home</a>
           <a href="about" className="hover:text-gray-300">About</a>
           <a href="dashboard" className="hover:text-gray-300">Services</a>

@@ -9,7 +9,7 @@ export default function Sample() {
   ];
 
   return (
-    <main className="min-h-screen bg-gray-50 p-6">
+    <main className="min-h-screen bg-gray-50 ">
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold text-gray-800">Diversify your portfolio in loans</h1>
         <p className="text-gray-500 mt-2">

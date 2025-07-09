@@ -1,18 +1,15 @@
 "use client";
-import Model from '@/components/Home/model';
 import Navbar from '@/components/navbar';
+import Policy from '@/components/policy';
 import React, { Suspense } from 'react'
 
 const page = () => {
   return (
     <Navbar>
-     <Suspense fallback={<div>Loading...</div>}>
-
-        <Model/>
-
-     </Suspense>
+    <Suspense fallback={<div>Loading...</div>}>
+        <Policy/>
+    </Suspense>
     </Navbar>
-    
   )
 }
 

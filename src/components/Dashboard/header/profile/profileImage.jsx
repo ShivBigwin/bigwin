@@ -1,10 +1,10 @@
+
 import { useState ,useRef,useEffect } from 'react';
 
 export default function ProfileImage() {
   const [image, setImage] = useState(null);
   const [showModal, setShowModal] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const dropdownRef = useRef(null);
+  
 
 
   const handleImageChange = (e) => {
@@ -16,20 +16,7 @@ export default function ProfileImage() {
     }
   };
   
-   const handleImageDelete = () => {
-    setImage(null);
-    setDropdownOpen(false);
-  };
-const handleOutsideClick = (e) => {
-    if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
-      setDropdownOpen(false);
-    }
-  };
-
-  useEffect(() => {
-    document.addEventListener('mousedown', handleOutsideClick);
-    return () => document.removeEventListener('mousedown', handleOutsideClick);
-  }, []);
+   
 
   return (
     <div className="relative w-18 h-18 bg-white items-center justify-center">
@@ -47,6 +34,7 @@ const handleOutsideClick = (e) => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
         </svg>
       </label>
+     
 </div>
   );
 }

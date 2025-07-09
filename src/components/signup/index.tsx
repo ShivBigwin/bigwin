@@ -3,6 +3,7 @@
 import Router from "next/router";
 import { useState } from "react";
 import OtpInput from "./OtpInput";
+import Link from "next/link";
 export default function Signup() {
   const [showOtp, setShowOtp] = useState(false);
 
@@ -61,8 +62,10 @@ export default function Signup() {
           {/* Left section */}
           <div className="md:w-1/2 bg-gradient-to-r from-indigo-900 to-blue-700 p-10 flex flex-col justify-between">
             <div>
-              {/* <img src="/logo.png" alt="BIGWIN" className="h-10 mb-8" /> */}
-              <h1 className="text-2xl font-semibold text-white mb-4">
+              <Link href="/home" className="text-xl font-bold text-gray-800">
+                <img src="bigwin-logo.jpg" alt="" />
+              </Link>
+              <h1 className="text-2xl font-semibold text-white mb-4 mt-6">
                 Welcome to BIGWIN
               </h1>
               <p className="text-sm text-gray-50 mb-4">
@@ -77,9 +80,12 @@ export default function Signup() {
                 rewards of peer-to-peer lending firsthand.
               </p>
             </div>
-            <div className="mt-8">
+            <div className="flex items-center justify-center border border-black w-fit rounded-full p-2">
+          <img src="/approved.svg" alt="NBFC P-2-P" /><span className="text-black">RBI Certified NBFC P-2-P</span>
+        </div>
+            {/* <div className="mt-8">
               <img src="/nbfc.png" alt="NBFC-P2P Registered" className="h-20" />
-            </div>
+            </div> */}
           </div>
 
           {/* Right section */}
@@ -112,11 +118,11 @@ export default function Signup() {
               </div>
               <p className="text-xs text-gray-500 mb-4">
                 By creating an account or logging in, you agree to{" "}
-                <a href="#" className="text-blue-500 underline">
+                <a href="/termsAndCondition" className="text-blue-500 underline">
                   Terms and conditions
                 </a>{" "}
                 and{" "}
-                <a href="#" className="text-blue-500 underline">
+                <a href="/policy" className="text-blue-500 underline">
                   Privacy policy
                 </a>
               </p>

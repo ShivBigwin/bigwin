@@ -21,7 +21,6 @@ export default function Footer(){
                             <li><a href="about" className="hover:underline">About</a></li>
                             <li><a href="/auth" className="hover:underline">Become a partner</a></li>
                             <li><a href="#" className="hover:underline">Careers</a></li>
-                            <li><a href="/...[model]" className="hover:underline">Bussiness Model</a></li>
                         </ul>
                     </div>
                     {/* Lending */}
@@ -32,6 +31,8 @@ export default function Footer(){
                             <li><a href="#" className="hover:underline">Who can lend?</a></li>
                             <li><a href="#" className="hover:underline">Credit Assesment</a></li>
                             <li><a href="#" className="hover:underline">Help & Support</a></li>
+                            <li><a href="termsAndCondition" className="hover:underline">Terms Of Service</a></li>
+                            <li><a href="policy" className="hover:underline">Privacy Policy</a></li>
                         </ul>
                     </div>
                     {/* Resources */}
