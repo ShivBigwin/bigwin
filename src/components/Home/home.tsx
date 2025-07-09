@@ -2,11 +2,15 @@
 
 import Footer from "./footer/page";
 import Sample from "./samplelist";
+import JoinUs from "./joinUs";
+import Model from "./model";
+import Procedure from "./procedure";
+import Disclaimer from "./disclaimer";
 
 export default function Home(){
     return(
         <>
-          <div className="min-h-screen bg-gradient-to-r from-blue-800 to-blue-700 text-white">
+          <div className="h-fit bg-gradient-to-r from-blue-800 to-blue-700 text-white">
            
       <div className="max-w-7xl mx-auto px-4 p-4">
         {/* Heading */}
@@ -15,7 +19,7 @@ export default function Home(){
           <img
             src="/phone-mockup.png"
             alt="App Screenshot"
-            className="w-[200px]  md:w-[300px] lg:w-[400px] hidden md:block rounded-lg absolute top-0 right-0"           
+            className="w-[150px]  md:w-[300px] lg:w-[400px] hidden md:block rounded-lg absolute top-0 right-0"           
           />
         </div>
 
@@ -33,7 +37,7 @@ export default function Home(){
         </p>        
 
         {/* Buttons */}
-        <div className="flex flex-wrap gap-4 mb-12">
+        <div className="flex flex-wrap gap-4 mb-12 px-20 py-10 items-center justify-center">
           <a href="/auth" className="border border-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-indigo-800 transition">
             Start Now
           </a>
@@ -41,7 +45,11 @@ export default function Home(){
             About Us
           </a>
         </div>
-        
+        <div className=" fixed bottom-2 left-2 overflow-auto  ">
+          <div className="flex  items-center justify-center border border-black bg-blue-700 w-fit rounded-full p-2">
+          <img src="/approved.svg" alt="NBFC P-2-P" /><span className="text-white">RBI Certified NBFC P-2-P</span>
+        </div>
+        </div>
       </div>
     </div> 
      
@@ -81,17 +89,22 @@ export default function Home(){
             <p className="text-gray-600">Grow your wealth by earning interest from loans.</p>
           </div>
         </div>
+        <div className="p-8"><JoinUs/></div>
+        
         </div>
         </div>
 
         {/* Sample List */}
         <Sample/>
 
-        {/* {P-2-P Lending } */}
-        {/* <Peer/> */}
+        <div><Model/></div>
+
+        <div><Procedure/></div>
 
         {/* Footer */}
-        <Footer/>
+        <div className="mt-6"><Footer/></div>
+        
+        <div><Disclaimer/></div>
         </>
       )
 }

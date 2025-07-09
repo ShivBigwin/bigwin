@@ -1,7 +1,6 @@
 "use client";
 
 import Hamburger from "@/common/Button/hamburger";
-import HomeDrop from "@/common/Dropdown/homedrop";
 import Link from "next/link";
 import React from "react";
 
@@ -21,25 +20,28 @@ export default function Navbar({ children }: NavbarProps) {
                 <img src="bigwin-logo.jpg" alt="" />
               </Link>
             </div>
-            <div className="hidden md:flex space-x-5 items-center">
+            <div className="hidden md:flex space-x-10 items-center mr-20 font-semibold">
+              <Link href="/home" className="text-gray-700 hover:text-blue-600">
+                Home
+              </Link>
               <Link href="/about" className="text-gray-700 hover:text-blue-600">
                 About
               </Link>
-              <Link href="/dashboard" className="text-gray-700 hover:text-blue-600">
+              {/* <Link href="/dashboard" className="text-gray-700 hover:text-blue-600">
                 Services
-              </Link>
-              <Link href="/Lenders" className="text-gray-700 hover:text-blue-600">
-                Lenders
-              </Link>
-              <Link href="/Borrowers" className="text-gray-700 hover:text-blue-600">
+              </Link> */}
+              <a href="/lender" className=" text-gray-700 hover:text-blue-600"> 
+                Lender
+              </a>
+              {/* <a href="/Borrowers" className="text-gray-700 hover:text-blue-600">
                 Borrowers
-              </Link>
-              <a
-                href="/auth"
+              </a> */}
+              {/* <a
+                href="/signup"
                 className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md shadow-md"
               >
                 SignUp
-              </a>
+              </a> */}
               <a
                 href="/login"
                 className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md shadow-md"

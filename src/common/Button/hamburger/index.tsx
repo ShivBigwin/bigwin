@@ -31,7 +31,7 @@ export default function Hamburger(){
           isOpen ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        {/* <HomeDrop/> */}
+        <HomeDrop/> 
         </div>
       )}
       </>
