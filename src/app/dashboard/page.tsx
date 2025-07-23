@@ -1,24 +1,25 @@
-"use client";
-import Dashboard from '@/components/dashboard';
-import Loader from '@/components/loader/loader';
+// "use client";
 
-import React, { Suspense, useState } from 'react'
+// import Dashboard from '@/components/dashboard/index';
+// import Loader from '@/components/loader/loader';
 
-const page = () => {
-const [isLoading, setIsLoading] = useState(true);
+// import React, { Suspense, useState } from 'react'
 
-  // Simulate loading
-  setTimeout(() => setIsLoading(false), 2000);
-  return (
-    <div>
-      {isLoading && <Loader />}
-    {/* <Navbar> */}
-    <Suspense fallback={<div>Loading...</div>}>
-        <Dashboard/>
-    </Suspense>
-    {/* </Navbar> */}
-    </div>
-  )
-}
+// const page = () => {
+// const [isLoading, setIsLoading] = useState(true);
 
-export default page
+//   // Simulate loading
+//   setTimeout(() => setIsLoading(false), 2000);
+//   return (
+//     <div>
+//       {isLoading && <Loader />}
+//     {/* <Navbar> */}
+//     <Suspense fallback={<div>Loading...</div>}>
+//         <Dashboard/>
+//     </Suspense>
+//     {/* </Navbar> */}
+//     </div>
+//   )
+// }
+
+// export default page
