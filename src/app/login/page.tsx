@@ -1,17 +1,23 @@
 "use client";
+import Loader from '@/components/loader/loader';
+import Login from '@/components/login';
+import Navbar from '@/components/navbar';
+import React, { Suspense, useState } from 'react'
 
-import Login from "@/components/login";
-import Navbar from "@/components/navbar";
-import { Suspense } from "react";
-
-export default function Home() {
+const page = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  // Simulate loading
+  setTimeout(() => setIsLoading(false), 2000);
   return (
-    //<Navbar>
+    <>
+   {isLoading && <Loader />}
+   <Navbar>
     <Suspense fallback={<div>Loading...</div>}>
-      <div className="">
-        <Login />
-      </div>
+        <Login/>
     </Suspense>
-    //</Navbar>
-  );
+    </Navbar>
+    </>
+  )
 }
+
+export default page

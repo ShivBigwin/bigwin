@@ -1,5 +1,6 @@
 "use client";
 
+import DarkModeToggle from "@/common/Button/darkMode";
 import Hamburger from "@/common/Button/hamburger";
 import Link from "next/link";
 import React from "react";
@@ -9,7 +10,6 @@ type NavbarProps = {
 };
 
 export default function Navbar({ children }: NavbarProps) {
-    
   return (
     <>
       <nav className="bg-white shadow-md sticky top-0 z-50 rounded-b-lg">
@@ -21,37 +21,36 @@ export default function Navbar({ children }: NavbarProps) {
               </Link>
             </div>
             <div className="hidden md:flex space-x-10 items-center mr-20 font-semibold">
-              <Link href="/home" className="text-gray-700 hover:text-blue-600">
+              <Link href="/home" className="text-gray-700 hover:underline">
                 Home
               </Link>
-              <Link href="/about" className="text-gray-700 hover:text-blue-600">
+              <Link href="/about" className="text-gray-700 hover:underline">
                 About
               </Link>
               {/* <Link href="/dashboard" className="text-gray-700 hover:text-blue-600">
                 Services
               </Link> */}
-              <a href="/lender" className=" text-gray-700 hover:text-blue-600"> 
+              <a href="/lender" className=" text-gray-700 hover:underline">
                 Lender
               </a>
-              {/* <a href="/Borrowers" className="text-gray-700 hover:text-blue-600">
+              <a href="/borrower" className="text-gray-700 hover:underline">
                 Borrowers
-              </a> */}
-              {/* <a
-                href="/signup"
-                className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md shadow-md"
-              >
-                SignUp
-              </a> */}
+              </a>
+              <a href="/resources" className="text-gray-700 hover:underline">
+                Resources
+              </a>
               <a
                 href="/login"
-                className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md shadow-md"
+                className="bg-blue-950 hover:bg-darkBlue text-white font-semibold py-2 px-4 rounded-md shadow-md"
               >
                 Login
               </a>
+              {/* <button className="bg-blue-950 hover:bg-darkBlue text-white font-semibold py-2 px-4  rounded-md shadow-md">
+                <DarkModeToggle />
+              </button> */}
             </div>
 
-            <Hamburger/>
-
+            <Hamburger />
           </div>
         </div>
       </nav>

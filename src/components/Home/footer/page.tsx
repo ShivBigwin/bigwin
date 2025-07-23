@@ -1,25 +1,33 @@
 "use client";
-
+import Image from 'next/image';
 export default function Footer(){
     return(
     <>
-        <div className="h-full bg-gradient-to-r from-blue-800 to-blue-700 p-8 ">
-            <div className=" border border-white rounded-2xl h-full font-sans ">
-                {/* Header */}
+        <div className="h-fit p-8 relative  w-full overflow-hidden">
+       
+      <Image
+        src="/footer.jpg" // Replace with your image path
+        alt=" "
+        fill
+        className="object-cover"
+        quality={100}
+        priority
+        />
+            <div className="relative z-10 border border-white rounded-2xl h-full font-sans ">
                 <div className=" mb-12 text-indigo-50 px-4 py-16">
-                    <div className="text-2xl font-semibold mb-1 px-4 text-center "> BIGWIN INFOTECH
+                    <div className="text-2xl font-semibold mb-1 px-4 text-center animate-fall"> BIGWIN INFOTECH
                     <p className="text-sm ">Innovate|Transform|Grow</p> 
                     </div>
                 </div>
                 {/* Grid Section */}
                 <div className="mt-14 mb-8 grid grid-cols-1 sm:grid-cols-3 gap-4 text-center text-teal-50">
                     {/* About */}
-                    <div>
+                    <div className='relative animate-fall'>
                         <h3 className="text-xl font-semibold mb-4">About</h3>
                         <ul className="space-y-2">
                             <li><a href="/home" className="hover:underline">Home</a></li>
                             <li><a href="about" className="hover:underline">About</a></li>
-                            <li><a href="/auth" className="hover:underline">Become a partner</a></li>
+                            <li><a href="/login" className="hover:underline">Become a partner</a></li>
                             <li><a href="#" className="hover:underline">Careers</a></li>
                         </ul>
                     </div>

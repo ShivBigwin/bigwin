@@ -1,24 +1,34 @@
-"use client";
 
-import Content from "./content";
-import Header from "./header";
-import SideBar from "./sidebar";
+// pages/dashboard.jsx
+"use client";
+import Sidebar from '@/components/dashboard/sidebar';
+import TopNavbar from '@/components/dashboard/topbar';
+import TransactionCard from '@/components/dashboard/transactionCard';
+import { useState } from 'react';
+
 
 export default function Dashboard() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
   return (
-    <div className="flex h-screen bg-gray-100">
-      {/* Sidebar */}
-      <SideBar/>
+    <div className="min-h-screen bg-gray-100">
+      <TopNavbar toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} /> 
 
-      {/* Dashboard navbar */}
-      <div className="flex-1 flex flex-col">
-        <Header/>
-        {/* Header */}
-       
-
-        {/* Content Area */}
-          <Content/>
+      <div className="flex">
+        <div className={`${isSidebarOpen ? 'block' : 'hidden'} md:block fixed md:static z-20`}>
+          <Sidebar />
+        </div>
+        
+        <main className="flex-1 p-8 mt-16 md:mt-0">
+          <div className={`${isSidebarOpen ? 'opacity-50 md:opacity-100' : ''} transition-opacity`}>
+            <TransactionCard />
+          </div>
+        </main>
       </div>
     </div>
-  )
+  );
 }
