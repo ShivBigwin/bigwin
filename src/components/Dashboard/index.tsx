@@ -1,5 +1,3 @@
-
-// pages/dashboard.jsx
 "use client";
 import Sidebar from '@/components/dashboard/sidebar';
 import TopNavbar from '@/components/dashboard/topbar';
