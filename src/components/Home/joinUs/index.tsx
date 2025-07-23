@@ -5,7 +5,7 @@ export default function JoinUs(){
     return(
 <>
         <div className=" bg-orange-50 h-min p-8 rounded-lg">
-            <div> <h1 className="text-3xl text-blue-700 text-center font-semibold p-4">
+            <div> <h1 className="text-3xl text-blue-950 text-center font-semibold p-4">
                     WHY TO JOIN US?
                 </h1></div>
 

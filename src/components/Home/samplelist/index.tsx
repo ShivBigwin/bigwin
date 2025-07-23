@@ -9,7 +9,7 @@ export default function Sample() {
   ];
 
   return (
-    <main className="min-h-screen bg-gray-50 ">
+    <main className="min-h-screen bg-white ">
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold text-gray-800">Diversify your portfolio in loans</h1>
         <p className="text-gray-500 mt-2">
@@ -20,7 +20,7 @@ export default function Sample() {
       {/* Loan Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto rounded-xl">
         {loans.map((loan, index) => (
-          <div key={index} className="bg-gradient-to-r from-blue-900 to-blue-600 rounded-lg p-4 shadow-md transition transform hover:translate-y-2">
+          <div key={index} className="bg-gradient-to-r from-blue-950 to-darkBlue rounded-lg p-4 shadow-md transition transform hover:translate-y-2">
             <div className=" flex justify-between items-center mb-2 text-white">
               <div className="flex flex-col">
                  <span className="font-semibold">Borrower Name</span>
@@ -41,7 +41,7 @@ export default function Sample() {
 
       {/* Call to Action */}
       <div className="flex justify-center mt-8">
-        <a href="/auth" className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-2 rounded-full text-lg">
+        <a href="/login" className="bg-blue-950 hover:shadow-2xl hover:translate-y-[-2px]   text-white px-6 py-2 rounded-full text-lg">
           Sign Up or Login to View all Loans
         </a>
       </div>

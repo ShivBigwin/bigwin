@@ -5,7 +5,7 @@ export default function Disclaimer(){
             <h1 className="text-lg text-center">
                 DISCLAIMER        
            </h1>
-            <p className="text-sm p-8">
+            <p className="text-sm text-gray-500 p-8">
                 BIGWIN INFOTECH PRIVATE LIMITED is an NBFC-P2P lending platform registered with the Reserve Bank.
                 However, the Reserve Bank does not accept any responsibility for the correctness of any of the statements or 
                 representations made or opinions expressed by the NBFC-P2P and does not provide any assurance for repayment of the loans lent on it. 
