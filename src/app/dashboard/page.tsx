@@ -1,5 +1,6 @@
 "use client";
-import Dashboard from '@/components/dashboard';
+
+import Dashboard from '@/components/dashboard/index';
 import Loader from '@/components/loader/loader';
 
 import React, { Suspense, useState } from 'react'
