@@ -119,13 +119,14 @@ export default function Step6Review({ data, prevStep, onSubmit }: StepProps) {
         >
           Back
         </button>
-        <button
+        <a
+          href="dash"
           type="button"
           onClick={onSubmit}
-          className="py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+          className="py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
         >
           Complete Onboarding
-        </button>
+        </a>
       </div>
     </div>
   );

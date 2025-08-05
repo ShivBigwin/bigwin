@@ -20,7 +20,7 @@ export default function Navbar({ children }: NavbarProps) {
                 <img src="bigwin-logo.jpg" alt="" />
               </Link>
             </div>
-            <div className="hidden md:flex space-x-10 items-center mr-20 font-semibold">
+            <div className="hidden md:flex space-x-10 items-center mr-10 font-semibold">
               <Link href="/home" className="text-gray-700 hover:underline">
                 Home
               </Link>
@@ -45,9 +45,6 @@ export default function Navbar({ children }: NavbarProps) {
               >
                 Login
               </a>
-              {/* <button className="bg-blue-950 hover:bg-darkBlue text-white font-semibold py-2 px-4  rounded-md shadow-md">
-                <DarkModeToggle />
-              </button> */}
             </div>
 
             <Hamburger />

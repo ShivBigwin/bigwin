@@ -1,12 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'class', // Use 'class' to manually toggle dark mode
-  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  darkMode: "class", // Use 'class' to manually toggle dark mode
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {},
   },
   plugins: [],
-  
+
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -42,18 +45,19 @@ module.exports = {
         darkGray: "#5A5A5A",
       },
       transformStyle: {
-        'preserve-3d': 'preserve-3d',
+        "preserve-3d": "preserve-3d",
       },
       perspective: {
-        '1000': '1000px',
+        1000: "1000px",
       },
       translate: {
-        'z-20': '20px',
+        "z-20": "20px",
       },
       animation: {
         "pulse-1s-once": "pulse 1s ease-in-out 1",
         spin: "spin 1s linear infinite",
         fall: "fall 1.5s ease-out forwards",
+        marquee: "marquee 5s linear forwards",
       },
       keyframes: {
         spin: {
@@ -66,6 +70,10 @@ module.exports = {
             "100%": { transform: "translateY(0)" },
           },
         },
+        marquee: {
+              "0%": { transform: "translateX(100%)" },
+              "100%": { transform: "translateX(-50%)" },
+            },
       },
     },
   },
