@@ -21,7 +21,8 @@
     "react-select": "^5.10.1",
     "react-spinners": "^0.17.0",
     "react-toastify": "^11.0.5",
-    "react-tooltip": "^5.28.1"
+    "react-tooltip": "^5.28.1",
+    "swiper": "^11.2.10"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

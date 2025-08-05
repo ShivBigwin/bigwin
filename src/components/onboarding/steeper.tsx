@@ -1,12 +1,16 @@
 import { USER_TYPES } from "@/constants";
-
+import Steps from "./steps";
 interface StepperProps {
   currentStep: number;
   userType: 'lender' | 'borrower' | null;
 }
 
 export default function Stepper({ currentStep, userType }: StepperProps) {
+
+       
   const getSteps = () => {
+
+   
     const baseSteps = [
       { id: 1, name: 'Mobile Number', description: 'Verify your phone' },
       { id: 2, name: 'User Type', description: 'Lender or Borrower' },
@@ -35,10 +39,12 @@ export default function Stepper({ currentStep, userType }: StepperProps) {
   const steps = getSteps();
 
   return (
-    <div className="hidden md:block w-64 pr-8">
+        <>
+    <div className="hidden md:block w-64 pr-8"> 
       <ol className="relative border-l border-gray-200 dark:border-gray-700">
         {steps.map((step: any) => (
           // Only render steps that are completed or current
+          
           step.id <= currentStep ? (
             <li key={step.id} className="mb-10 ml-6">
               <span
@@ -89,7 +95,8 @@ export default function Stepper({ currentStep, userType }: StepperProps) {
             </li>
           ) : null
         ))}
-      </ol>
+      </ol>  
     </div>
+    </>
   );
 }

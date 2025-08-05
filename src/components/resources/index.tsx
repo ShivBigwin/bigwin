@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
+import Footer from "../Home/footer/page";
 export default function Resources() {
   return (
     <>
@@ -107,6 +108,7 @@ export default function Resources() {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }
