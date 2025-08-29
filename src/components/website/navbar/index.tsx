@@ -1,6 +1,5 @@
 "use client";
 
-import DarkModeToggle from "@/common/Button/darkMode";
 import Hamburger from "@/common/Button/hamburger";
 import Link from "next/link";
 import React from "react";

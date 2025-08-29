@@ -1,15 +1,14 @@
 "use client";
 
-import Signup from '@/components/signup';
+import Settings from '@/components/dash/setting';
 import React, { Suspense } from 'react'
 
 const page = () => {
   return (
-     //<Navbar>
+    
     <Suspense fallback={<div>Loading...</div>}>
-        <Signup/>
+        <Settings/>
     </Suspense>
-    //</Navbar>
     
   )
 }

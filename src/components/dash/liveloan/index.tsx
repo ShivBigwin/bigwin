@@ -1,81 +1,78 @@
-import React from 'react';
+"use client";
+
+import UserDashboardLayout from "../userDashboardLayout";
+
 
 const LiveLoans = () => {
-  const loans = [
+  const liveLoans = [
     {
       id: 1,
-      name: "MADEM PRAVEEN KUL",
-      repayment: "Instantment: Month...",
-      amount: "¥2000",
-      tenure: "3 Month(s)",
-      interestRate: "45.60%",
-      score: "720",
+      borrower: "Rajesh Kumar",
+      amount: "₹200,000",
+      interestRate: "12%",
+      purpose: "Business Expansion",
+      progress: 65,
+      timeLeft: "3 days"
     },
     {
       id: 2,
-      name: "GREESHMAK O",
-      repayment: "Instantment: Month...",
-      amount: "¥9000",
-      tenure: "4 Month(s)",
-      interestRate: "35.88%",
-      score: "771",
+      borrower: "Sunita Patel",
+      amount: "₹150,000",
+      interestRate: "11.5%",
+      purpose: "Education",
+      progress: 40,
+      timeLeft: "7 days"
     },
     {
       id: 3,
-      name: "MR RAJESHKUMAR",
-      repayment: "Instantment: Month...",
-      amount: "¥5000",
-      tenure: "2 Month(s)",
-      interestRate: "40.25%",
-      score: "690",
-    },
+      borrower: "Vikram Singh",
+      amount: "₹300,000",
+      interestRate: "10.8%",
+      purpose: "Home Renovation",
+      progress: 85,
+      timeLeft: "1 day"
+    }
   ];
 
   return (
-    <div className="max-w-4xl mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-6">Live Loans</h1>
-      
-      <div className="mb-4 flex items-center">
-        <input 
-          type="checkbox" 
-          id="selectAll" 
-          className="mr-2 h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-        />
-        <label htmlFor="selectAll" className="text-sm font-medium text-gray-700">
-          Select all
-        </label>
-      </div>
-      
-      <div className="space-y-6">
-        {loans.map((loan) => (
-          <div key={loan.id} className="border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
-            <div className="mb-3">
-              <h2 className="font-semibold text-lg">{loan.name}</h2>
-              <p className="text-gray-500 text-sm">{loan.repayment}</p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-4  text-sm">
-              <div>
-                <p className="text-gray-500">Loan Amt</p>
-                <p className="font-medium">{loan.amount}</p>
+    <UserDashboardLayout activeTab="liveloan">
+      <div className="bg-white rounded-lg shadow p-6">
+        
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {liveLoans.map((loan) => (
+            <div key={loan.id} className="border rounded-lg p-4 hover:shadow-md transition-shadow">
+              <h3 className="font-semibold text-lg mb-2">{loan.borrower}</h3>
+              <div className="mb-4">
+                <p className="text-gray-600">Amount: <span className="font-medium">{loan.amount}</span></p>
+                <p className="text-gray-600">Interest: <span className="font-medium">{loan.interestRate}</span></p>
+                <p className="text-gray-600">Purpose: <span className="font-medium">{loan.purpose}</span></p>
               </div>
-              <div>
-                <p className="text-gray-500">Tenure</p>
-                <p className="font-medium">{loan.tenure}</p>
+              
+              <div className="mb-4">
+                <div className="flex justify-between text-sm mb-1">
+                  <span>Funding Progress</span>
+                  <span>{loan.progress}%</span>
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-2">
+                  <div 
+                    className="bg-blue-600 h-2 rounded-full" 
+                    style={{ width: `${loan.progress}%` }}
+                  ></div>
+                </div>
               </div>
-              <div>
-                <p className="text-gray-500">Interest Rate</p>
-                <p className="font-medium">{loan.interestRate}</p>
-              </div>
-              <div>
-                <p className="text-gray-500">Credit Score</p>
-                <p className="font-medium">{loan.score}</p>
+              
+              <div className="flex justify-between items-center">
+                <span className="text-sm text-gray-500">Time left: {loan.timeLeft}</span>
+                <button className="bg-blue-600 text-white px-3 py-1 rounded text-sm hover:bg-blue-700">
+                  Invest
+                </button>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </UserDashboardLayout>
   );
 };
 

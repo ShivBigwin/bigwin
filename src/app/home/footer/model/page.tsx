@@ -1,6 +1,7 @@
 "use client";
-import Model from '@/components/Home/model';
-import Navbar from '@/components/navbar';
+
+import Model from '@/components/website/Home/model';
+import Navbar from '@/components/website/navbar';
 import React, { Suspense } from 'react'
 
 const page = () => {

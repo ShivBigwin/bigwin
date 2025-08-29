@@ -1,15 +1,14 @@
 "use client";
 
-import Signup from '@/components/signup';
+import UserDashboardLayout from '@/components/dash/userDashboardLayout';
 import React, { Suspense } from 'react'
 
 const page = () => {
   return (
-     //<Navbar>
+    
     <Suspense fallback={<div>Loading...</div>}>
-        <Signup/>
+        <UserDashboardLayout/>
     </Suspense>
-    //</Navbar>
     
   )
 }

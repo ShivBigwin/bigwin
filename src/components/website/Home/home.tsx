@@ -8,6 +8,7 @@ import Procedure from "./procedure";
 import Disclaimer from "./disclaimer";
 import SpecialFeatures from "./specialFeatures";
 import GoToTopButton from "@/common/Button/goToTop";
+import LoanTypes from "../loanType";
 
 export default function Home() {
   return (
@@ -109,6 +110,7 @@ export default function Home() {
       <Sample/>
       <Model/>
       <Procedure/>
+      
       <SpecialFeatures/>
       <Footer/>
       <GoToTopButton/>

@@ -1,8 +1,8 @@
 "use client";
 
 import UserDashboard from '@/components/dash';
+import Loader from '@/components/website/loader/loader';
 
-import Loader from '@/components/loader/loader';
 
 import React, { Suspense, useState } from 'react'
 

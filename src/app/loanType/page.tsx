@@ -1,8 +1,9 @@
 "use client";
 
-import Loader from '@/components/loader/loader';
-import LoanTypes from '@/components/loanType';
-import Navbar from '@/components/navbar';
+
+import Loader from '@/components/website/loader/loader';
+import LoanTypes from '@/components/website/loanType';
+import Navbar from '@/components/website/navbar';
 import React, { Suspense, useState } from 'react'
 
 const page = () => {
