@@ -1,3 +1,4 @@
+"use client";
 export default function Loader() {
   return (
     <div className="fixed inset-0 flex flex-col items-center justify-center bg-blue-950  z-50 space-y-4">

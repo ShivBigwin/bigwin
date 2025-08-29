@@ -1,7 +1,9 @@
 "use client";
-import Loader from '@/components/loader/loader';
+
 import Login from '@/components/login';
-import Navbar from '@/components/navbar';
+import Loader from '@/components/website/loader/loader';
+import Navbar from '@/components/website/navbar';
+
 import React, { Suspense, useState } from 'react'
 
 const page = () => {

@@ -1,11 +1,10 @@
 "use client";
-
-import Home from '@/components/Home/home';
-import Loader from '@/components/loader/loader';
-import Navbar from '@/components/navbar';
+import Home from '@/components/website/Home/home';
+import Loader from '@/components/website/loader/loader';
+import Navbar from '@/components/website/navbar';
 import React, { Suspense, useState } from 'react'
 
-const page = () => {
+const home = () => {
 
   const [isLoading, setIsLoading] = useState(true);
 
@@ -24,4 +23,4 @@ const page = () => {
   )
 }
 
-export default page
+export default home

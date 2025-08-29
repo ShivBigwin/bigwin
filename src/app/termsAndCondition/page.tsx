@@ -1,6 +1,7 @@
 "use client";
-import Navbar from '@/components/navbar';
-import Conditions from '@/components/termsAndCondition';
+
+import Navbar from '@/components/website/navbar';
+import Conditions from '@/components/website/termsAndCondition';
 import React, { Suspense } from 'react'
 
 const page = () => {

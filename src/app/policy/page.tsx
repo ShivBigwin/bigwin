@@ -1,6 +1,7 @@
 "use client";
-import Navbar from '@/components/navbar';
-import Policy from '@/components/policy';
+
+import Navbar from '@/components/website/navbar';
+import Policy from '@/components/website/policy';
 import React, { Suspense } from 'react'
 
 const page = () => {

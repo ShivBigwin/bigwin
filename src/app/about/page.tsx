@@ -1,8 +1,9 @@
 "use client";
 
-import About from '@/components/about';
-import Loader from '@/components/loader/loader';
-import Navbar from '@/components/navbar';
+
+import About from '@/components/website/about';
+import Loader from '@/components/website/loader/loader';
+import Navbar from '@/components/website/navbar';
 import React, { Suspense, useState } from 'react'
 
 const page = () => {
@@ -18,7 +19,7 @@ const [isLoading, setIsLoading] = useState(true);
         <About/>
     </Suspense>
     </Navbar>
-    </div>
+    </div>  
   )
 }
 

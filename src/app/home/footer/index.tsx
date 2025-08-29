@@ -1,6 +1,7 @@
 "use client";
-import Footer from '@/components/Home/footer/page';
-import Navbar from '@/components/navbar';
+
+import Footer from '@/components/website/Home/footer/page';
+import Navbar from '@/components/website/navbar';
 import React, { Suspense } from 'react'
 
 const page = () => {

@@ -11,7 +11,8 @@ import Step5BankDetails from '@/components/onboarding/step5Bank';
 import Step6Review from '@/components/onboarding/step6Review';
 import { ONBOARDING_STEPS } from '@/constants';
 import { OnboardingData } from '@/type';
-import Navbar from '@/components/navbar';
+import Navbar from '@/components/website/navbar';
+
 
 export default function OnboardingPage() {
   const [currentStep, setCurrentStep] = useState(ONBOARDING_STEPS.MOBILE_NUMBER);
