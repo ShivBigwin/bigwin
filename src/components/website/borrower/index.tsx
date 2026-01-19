@@ -1,9 +1,12 @@
 "use client";
+
+import Footer from "../Home/footer/page";
+
 export default function Borrower() {
   return (
     <>
       <div className="">
-        <div className="flex rounded-lg bg-gradient-to-br from-blue-950 to-darkBlue mb-8 items-center justify-center text-4xl font-semibold text-white mt-8 p-2">
+        <div className="flex  bg-gradient-to-br from-blue-950 to-darkBlue mb-8 items-center justify-center text-4xl font-semibold text-white mt-8 p-2">
           <h1>Borrowers</h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 text-center ">
@@ -30,14 +33,14 @@ export default function Borrower() {
           </div>
         </div>
 
-         <div className="bg-gradient-to-br from-blue-950 to-darkBlue rounded-lg">
-            <h1 className="p-4  ml-4 text-2xl text-white font-semibold">
-              Step By Step Process :
-            </h1>
-          </div>
+        <div className="bg-gradient-to-br from-blue-950 to-darkBlue rounded-lg">
+          <h1 className="p-4  ml-4 text-2xl text-white font-semibold">
+            Step By Step Process :
+          </h1>
+        </div>
 
         <div className="flex items-center justify-center p-4">
-         
+
           <div className="grid grid-cols-1 md:grid-cols-8 text-sm  p-10 gap-6">
             <div className="">
               <div className=" items-center justify-center text-center hover:shadow-2xl bg-blue-300 text-black  h-32 w-32 rounded-lg border border-black">
@@ -176,6 +179,11 @@ export default function Borrower() {
           </div>
         </div>
       </div>
+
+
+      <Footer />
     </>
+
   );
+
 }

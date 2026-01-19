@@ -7,7 +7,7 @@ export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
-    const token = localStorage.getItem("token");
+    const token: any = localStorage.getItem("token");
 
     if (!token) {
       router.push("/home");
@@ -15,6 +15,6 @@ export default function Home() {
   }, []);
 
   return <div>
-   
+
     {/* <AuthContainer /> */}</div>;
 }

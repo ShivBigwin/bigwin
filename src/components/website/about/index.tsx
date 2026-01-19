@@ -8,11 +8,11 @@ export default function About() {
     <>
       <div className="min-h-screen bg-teal-50 items-center justify-center animate-pulse-1s-once">
         <div className=" relative overflow-hidden w-full">
-          <h1 className="text-3xl md:text-4xl  text-center bg-white text-black drop-shadow-sm p-6 ">
+          <h1 className="text-3xl md:text-4xl  text-center bg-blue-950 text-white drop-shadow-sm  p-2 ">
             Driven by innovation
           </h1>
         </div>
-    
+
         {/* content */}
         <div className="grid grid-cols-1 md:grid-cols-2 text-center  gap-4 p-6 mb-4 mt-10">
           <div className="group relative overflow-hidden rounded-lg  hover:shadow-xl transition-shadow duration-300">
