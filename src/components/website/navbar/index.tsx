@@ -16,7 +16,7 @@ export default function Navbar({ children }: NavbarProps) {
           <div className="flex justify-between h-20">
             <div className="flex items-center">
               <Link href="/home" className="text-xl font-bold text-gray-800">
-                <img src="bigwin-logo.jpg" alt="" />
+                <img src="BigwinLogo.png" alt="" />
               </Link>
             </div>
             <div className="hidden md:flex space-x-10 items-center mr-10 font-semibold">
@@ -45,7 +45,6 @@ export default function Navbar({ children }: NavbarProps) {
                 Login
               </a>
             </div>
-
             <Hamburger />
           </div>
         </div>

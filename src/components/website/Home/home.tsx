@@ -124,7 +124,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="p-4 sm:p-8"><JoinUs /></div>
+          {/* <div className="p-4 sm:p-8"><JoinUs /></div> */}
         </div>
       </div>
 
